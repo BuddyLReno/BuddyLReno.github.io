@@ -1,0 +1,12 @@
+{
+  "name": "BuddyLReno.github.io",
+  "version": "1.0.0",
+  "description": "Personal blog of Buddy Reno",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BuddyLReno/BuddyLReno.github.io.git"
+  },
+  "author": "Buddy Reno",
+  "homepage": "http://buddylreno.github.io"
+}
