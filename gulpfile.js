@@ -12,17 +12,17 @@ var messages = {
 };
 
 gulp.task('jekyll-build', function (done) {
-  plugins.browsersync.notify(messages.jekyllBuild);
+  browsersync.notify(messages.jekyllBuild);
   return cp.spawn('jekyll', ['build', '--drafts'], {stdio: 'inherit'})
   .on('close', done);
 });
 
 gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
-  plugins.browsersync.reload();
+  browsersync.reload();
 });
 
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
-  plugins.browsersync({
+  browsersync({
     server: {
       baseDir: './_site'
     }
