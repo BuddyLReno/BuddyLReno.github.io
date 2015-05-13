@@ -8,5 +8,12 @@
     "url": "https://github.com/BuddyLReno/BuddyLReno.github.io.git"
   },
   "author": "Buddy Reno",
-  "homepage": "http://buddylreno.github.io"
+  "homepage": "http://buddylreno.github.io",
+  "devDependencies": {
+    "browser-sync": "^2.7.1",
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.2.0",
+    "gulp-load-plugins": "^0.10.0",
+    "gulp-sass": "^2.0.0"
+  }
 }
