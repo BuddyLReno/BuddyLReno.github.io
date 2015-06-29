@@ -1,0 +1,40 @@
+footer {
+  clear: both;
+  padding: 1rem 0;
+
+  ul {
+    margin: 0.5em 0 0 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+
+    li {
+      display: inline-block;
+      margin-left: 0.15rem;
+    }
+
+    a {
+      display: block;
+      width: 2.5rem;
+      height: 2.5rem;
+      font-size: 0;
+      border-bottom: 0;
+      color: transparent;
+
+      &:hover,
+      &:focus {
+        border-bottom: none;
+
+        svg path {
+          fill: $green;
+          opacity: 1;
+        }
+      }
+    }
+
+    svg path {
+      fill: $text;
+      opacity: 0.5;
+    }
+  }
+}

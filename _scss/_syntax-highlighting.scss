@@ -1,0 +1,43 @@
+/**
+ * Syntax highlighting styles
+ */
+.highlight {
+  background: rgba(white, 0.75);
+  max-width: 100%;
+  overflow-x: scroll;
+
+  .err   { color: #a61717; background-color: #e3d2d2 }
+  .gd { background-color: #fdd }
+  .gd .x { background-color: #faa }
+  .gi { background-color: #dfd }
+  .gi .x { background-color: #afa }
+  .go { color: #888 }
+  .gu { color: #aaa }
+
+  .k, .o,
+  .cp, .cs,
+  .gs,
+  .kc, .kd, .kp, .kr, .kt,
+  .nc, .ne, .nf,
+  .ow { font-weight: bold }
+
+  .c, .cm, .c1, .cs, .ge { font-style: italic }
+
+  .gd, .gd .x, .gi, .gi .x { color: #000 }
+  .gr, .gt { color: #a00 }
+  .gp, .nn { color: #555 }
+  .s, .sb, .sc, .sd, .s2, .se, .sh, .si, .sx, .s1 { color: #d14 }
+  .c, .cm, .c1 { color: #998 }
+  .cp, .cs, .gh, .bp { color: #999 }
+  .il, .m, .mf, .mh, .mi, .mo { color: #099 }
+  .kt, .nc{ color: #458 }
+  .vc, .vg, .vi, .nv, .na, .no { color: #008080 }
+  .ne, .nf { color: #900 }
+
+  .nb { color: #0086B3 }
+  .ni { color: #800080 }
+  .nt { color: #000080 }
+  .w { color: #bbb }
+  .sr { color: #009926 }
+  .ss { color: #990073 }
+}
