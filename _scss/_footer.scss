@@ -25,16 +25,20 @@ footer {
       &:focus {
         border-bottom: none;
 
-        svg path {
+        svg {
           fill: $green;
           opacity: 1;
+          width: inherit;
+          height: inherit;
         }
       }
     }
 
-    svg path {
+    svg {
       fill: $text;
       opacity: 0.5;
+      width: inherit;
+      height: inherit;
     }
   }
 }
