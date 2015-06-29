@@ -1,7 +1,7 @@
 ---
 layout: external
 title: "Creating a Sass Theme Engine"
-date:  2015-05-05
+date:  2015-06-29
 description: "I show you how to create a theme engine with sass."
 external_url: http://www.developwithpurpose.com/creating-a-sass-theme-engine/
 ---
