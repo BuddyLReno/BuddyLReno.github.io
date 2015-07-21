@@ -24,7 +24,10 @@
 
 .post-link {
   position: relative;
-  padding-left: 1.2em;
+
+  &[rel="external"] {
+    padding-left: 1.2em;
+  }
 
   .icon-externalLink {
     position: absolute;
