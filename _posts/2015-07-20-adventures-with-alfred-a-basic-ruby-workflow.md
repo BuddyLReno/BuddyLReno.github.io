@@ -5,9 +5,9 @@ date:  2015-07-20
 description: "Learning how to use Alfred by creating a simple workflow."
 ---
 
-[Alfred](http://www.alfredapp.com)'s amazing workflow feature is my favorite thing about Alfred.  After toying with some of the different workflows out there, a lot of them from [Packal](http://www.packal.org), I wanted to learn how to create my own. 
+I've been using [Alfred](http://www.alfredapp.com) for a little bit now, and have fallen in love with it's amazing workflow feature. The power it brings to automation is incredible and easy to use. After toying with some of the different workflows out there, a lot of them from [Packal](http://www.packal.org), I wanted to learn how to create my own. 
 
-Alfred allows you to run scripts in various languages, such as php, bash, and apple script, but I'm most familiar with Ruby. I found some good tutorials on creating workflows with Ruby but I needed to understand Alfred and how workflows function before going deeper. I'll walk through the process of creating my first workflow with ruby, trying to keep it as simple as possible.
+Alfred allows you to run scripts in various languages, such as php, bash, and apple script, but I'm most familiar with ruby. I found some good tutorials on creating workflows with ruby but I needed to understand Alfred and how workflows function before going deeper. I'll walk through the process of creating my first workflow with ruby, trying to keep it as simple as possible.
 <!--more-->
 
 For my first workflow, I decided to automate (at least partially) my weekly report process. I write my reports in markdown, so it'll be easy to work with. What I wanted this workflow to accomplish:
@@ -15,6 +15,7 @@ For my first workflow, I decided to automate (at least partially) my weekly repo
 - Run task with a keyword.
 - Run a ruby script to create a new report, update header data, and use previous report's data for content.
 - Copy the file name (without extension) to the clipboard
+- Show a notification that the workflow completed.
 
 Searching for "Alfred ruby workflow", you'll come across an awesome [template built by Zhaocai](https://github.com/zhaocai/alfred-workflow). This is great for when you expand your workflow to take care of multiple tasks, save settings, and distribute. However, it does require you to have a good understanding of workflows, so I'm skipping this for now.
 
@@ -36,11 +37,11 @@ To keep it easy, I've decided that my keyword doesn't accept any user input.  Th
 ![keyword details](/assets/images/alfred-ruby-workflow/keyword-details-preview.png)
 
 ## Adding the Script
-Click the plus button on the workflow canvas and select "Run Script" from the Actions menu.  This will bring up a new window asking for your script details. I've left everything as default here as well, except I changed the language to Ruby.
+Click the plus button on the workflow canvas and select "Run Script" from the Actions menu.  This will bring up a new window asking for your script details. I've left everything as default here as well, except I changed the language to ruby.
 
 ![ruby script](/assets/images/alfred-ruby-workflow/ruby-script.png)
 
-I've provided my script below and commented on a few lines, notable to working with Alfred. This isn't necessarily good Ruby code, but I'm not concerned about that right now; version 1.0 people. Feel free to edit and use it, but since it's not really meant to be shared, you'll need to make some significant changes. Add your script and save it.
+I've provided my script below and commented on a few lines, notable to working with Alfred. This isn't necessarily good ruby code, but I'm not concerned about that right now; version 1.0 people. Feel free to edit and use it, but since it's not really meant to be shared, you'll need to make some significant changes. Add your script and save it.
 
 {% highlight ruby %}
 	require 'fileutils'
