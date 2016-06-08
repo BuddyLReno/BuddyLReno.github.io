@@ -1,19 +1,61 @@
----
-layout: default
----
-
-<ul class="post-list">
-  {% for post in site.posts %}
-    <li>
-      <h2 class="post-header">
-        {% if post.external_url %}
-        <a rel="external" class="post-link" href="{{ post.url | prepend: site.baseurl }}"><svg class="icon-externalLink"><use xlink:href="#svg-externalLink"/></svg>{{ post.title }}</a>
-        {% else %}
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        {% endif %}
-        <span class="post-meta">{{ post.date | date: "%B %d, %Y" }}</span>
-      </h2>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Buddy Reno // Front-End Developer</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+  <body>
+    <header class="SiteHeader">
+      <div class="SiteHeader-innerWrap">
+        <h1 class="SiteHeader-title">Hello, I'm Buddy&nbsp;Reno<small>A web developer who loves technology and&nbsp;stuff</small></h1>
+      </div>
+    </header>
+    <nav class="SiteNav">
+      <div class="SiteNav--innerWrap">
+        <ul>
+          <li><a href="#articles">Articles</a></li>
+          <li><a href="#speaking">Speaking</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="SiteBody">
+      <section class="SiteBody--innerWrap">
+        <article>
+          <h1 id="articles" class="SectionTitle">Articles</h1>
+          <ul>
+            <li><a href="http://codepen.io/BuddyLReno/post/specifying-your-animation-units">Specifying Your Animation Units</a></li>
+            <li><a href="http://codepen.io/BuddyLReno/post/order-one-flexbox">I'd Like To Order One Flexbox Please</a></li>
+            <li><a href="https://medium.com/@BuddyLReno/adventures-with-alfred-a-basic-ruby-workflow-bef35db237d#.kf50q94q7">Adventures with Alfred</a></li>
+            <li><a href="http://codepen.io/BuddyLReno/post/creating-a-sass-theme-engine">Creating a Sass Theme Engine</a></li>
+          </ul>
+        </article>
+        <article>
+          <h1 id="speaking" class="SectionTitle">Speaking</h1>
+          <p>Submitted to DevSpace 2016; will find out July 1st if I'm accepted.</p>
+        </article>
+        <article>
+          <h1 id="about" class="SectionTitle">About Me</h1>
+          <p>I began my career in 2004 with an Associate's Degree in Software Applications and Programming. I obtained my first job that same year and began to teach myself the concepts of web development and fell in love with the awesome-ness of html, css, sass, and javascript.</p>
+          <p>Currently making amazing stuff at <a href="http://www.daveramsey.com">Ramsey Solutions</a> in Nashville, TN, providing for my beautiful wife and 1 year-old daughter.</p>
+        </article>
+      </section>
+    </main>
+    <footer class="SiteFooter">
+      <div class="SiteFooter--innerWrap">
+        <p><em>@BuddyLReno almost everywhere</em></p>
+        <p>
+          <a class="SocialLink" href="https://twitter.com/buddylreno"><img src="/assets/svgs/twitter.svg"/></a>
+          &nbsp;
+          <a class="SocialLink" href="https://www.instagram.com/buddylreno/"><img src="/assets/svgs/instagram.svg"/></a>
+        </p>
+        <p><a href="#articles">Articles</a>&nbsp;&nbsp;
+          <a href="#speaking">Speaking</a>&nbsp;&nbsp;
+          <a href="#about">About</a></p>
+        <p>&copy;2016 buddyreno.me</p>
+      </div>
+    </footer>
+  </body>
+</html>

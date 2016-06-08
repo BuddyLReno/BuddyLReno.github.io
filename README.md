@@ -1,2 +1,2 @@
-#buddylreno.github.io
-Repo for my personal blog, [Buddy L Reno](http://buddylreno.github.io).
+#buddyreno.me
+Repo for my [personal blog](http://buddyreno.me).

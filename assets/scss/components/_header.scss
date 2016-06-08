@@ -1,0 +1,18 @@
+.SiteHeader {
+  background-image: url("../svgs/header-pattern.svg");
+  margin: 0;
+  padding: 4rem 1rem;
+}
+
+.SiteHeader-innerWrap {
+  max-width: 80%;
+  width: 100%;
+  margin: 0 auto 0 20%;
+  text-align: left;
+
+  @include max-width($site-size-px) {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
