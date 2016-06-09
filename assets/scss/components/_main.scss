@@ -6,12 +6,11 @@
   @include max-width($site-size-px) {
     width: 100%;
     margin-left: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
   }
 
   &--innerWrap {
     max-width: $site-size;
+    padding: 0 1rem;
   }
 
   article + article {

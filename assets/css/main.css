@@ -377,7 +377,7 @@ body {
   font-family: "Source Code Pro", monaco, Consolas, "Lucida Console", monospace; }
 
 html {
-  font-size: 1rem; }
+  font-size: 1.125rem; }
 
 h1,
 h2,
@@ -408,6 +408,14 @@ a {
 blockquote {
   color: #7f0a77; }
 
+ul {
+  list-style: none;
+  padding-left: 0; }
+  ul li {
+    background: url("/assets/svgs/plus_bullet.svg") no-repeat center left/0.875rem 0.875rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1.25rem; }
+
 .SectionTitle {
   padding: 0 0 0 0.25em;
   font-weight: 600;
@@ -434,18 +442,43 @@ blockquote {
 .SiteHeader {
   background-image: url("../svgs/header-pattern.svg");
   margin: 0;
-  padding: 4rem 1rem; }
+  padding: 3rem 1rem; }
 
 .SiteHeader-innerWrap {
   max-width: 80%;
   width: 100%;
   margin: 0 auto 0 20%;
-  text-align: left; }
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
   @media screen and (max-width: 62.5rem) {
     .SiteHeader-innerWrap {
       max-width: 100%;
       margin: 0 auto;
-      text-align: center; } }
+      text-align: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
+
+.SiteHeader-photo {
+  width: 9.375rem;
+  height: 9.375rem;
+  border-radius: 50%; }
+
+.SiteHeader-title {
+  margin: 0 0 0 1rem; }
+  @media screen and (max-width: 62.5rem) {
+    .SiteHeader-title {
+      margin-left: 0;
+      margin-top: 1rem; } }
 
 .SiteNav {
   background-color: #7f0a77;
@@ -478,6 +511,10 @@ blockquote {
         -webkit-justify-content: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+    .SiteNav ul li {
+      background: none;
+      margin-bottom: 0;
+      padding-left: 0; }
   .SiteNav a {
     display: inline-block;
     color: #fff;
@@ -499,22 +536,25 @@ blockquote {
   @media screen and (max-width: 62.5rem) {
     .SiteBody {
       width: 100%;
-      margin-left: auto;
-      padding-left: 1rem;
-      padding-right: 1rem; } }
+      margin-left: auto; } }
   .SiteBody--innerWrap {
-    max-width: 62.5rem; }
+    max-width: 62.5rem;
+    padding: 0 1rem; }
   .SiteBody article + article {
     margin-top: 5rem; }
 
 .SiteFooter {
   border-top: #0a7f12 3.125rem solid;
   background-color: #383838;
-  padding: 6rem 1rem;
+  padding: 4rem 1rem;
   color: #fff; }
   .SiteFooter--innerWrap {
     max-width: 62.5rem;
-    margin: 0 auto; }
+    margin: 0 auto 0 20%; }
+    @media screen and (max-width: 62.5rem) {
+      .SiteFooter--innerWrap {
+        margin-left: auto;
+        text-align: center; } }
   .SiteFooter a {
     color: #fff; }
   .SiteFooter .SocialLink {

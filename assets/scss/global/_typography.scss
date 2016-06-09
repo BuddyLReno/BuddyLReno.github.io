@@ -1,5 +1,5 @@
 html {
-  font-size: 1rem;
+  font-size: scut-rem(18);
 }
 
 body {
@@ -35,6 +35,17 @@ a {
 
 blockquote {
   color: $purple;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    background: url("/assets/svgs/plus_bullet.svg") no-repeat center left / scut-rem(14) scut-rem(14);
+    margin-bottom: 1.5rem;
+    padding-left: scut-rem(20);
+  }
 }
 
 .SectionTitle {

@@ -1,12 +1,17 @@
 .SiteFooter {
   border-top: $green scut-rem(50) solid;
   background-color: darken($gray, 40);
-  padding: 6rem 1rem;
+  padding: 4rem 1rem;
   color: $white;
 
   &--innerWrap {
     max-width: $site-size;
-    margin: 0 auto;
+    margin: 0 auto 0 20%;
+
+    @include max-width($site-size-px) {
+      margin-left: auto;
+      text-align: center;
+    }
   }
 
   a {
