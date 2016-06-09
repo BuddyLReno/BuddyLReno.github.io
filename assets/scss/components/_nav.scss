@@ -41,20 +41,16 @@
     font-weight: 400;
     position: relative;
 
+    &:after, 
+    &:before {
+      display: none;
+    }
+
     &:hover {
       background-color: inherit;
       color: inherit;
       text-decoration: underline;
     }
-
-    // &:after {
-    //   position: absolute;
-    //   bottom: 0;
-    //   content: "";
-    //   margin: 0 auto;
-    //   background: $green;
-    //   opacity: 1;
-    // }
   }
 
   li + li {
