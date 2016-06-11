@@ -402,38 +402,7 @@ a {
   color: #0a7f12;
   vertical-align: text-bottom; }
   a:hover {
-    color: #0a7f12; }
-    a:hover:after {
-      -webkit-transform: translate3d(100%, 0, 0);
-              transform: translate3d(100%, 0, 0); }
-    a:hover:before {
-      width: 100%; }
-  a:after {
-    content: "";
-    position: absolute;
-    height: 0.25em;
-    width: 100%;
-    top: 50%;
-    right: 0;
-    background: #7f0a77;
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-    -webkit-transition: -webkit-transform 0.4s;
-    transition: -webkit-transform 0.4s;
-    transition: transform 0.4s;
-    transition: transform 0.4s, -webkit-transform 0.4s;
-    -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-            transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1); }
-  a:before {
-    content: attr(data-letters);
-    position: absolute;
-    z-index: 2;
-    overflow: hidden;
-    color: #7f0a77;
-    white-space: nowrap;
-    width: 0;
-    -webkit-transition: width 0.4s 0.3s;
-    transition: width 0.4s 0.3s; }
+    text-decoration: underline; }
 
 blockquote {
   color: #7f0a77; }
