@@ -1,2 +1,2 @@
-#buddyreno.me
-Repo for my [personal blog](http://buddyreno.me).
+#buddyreno.dev
+Repo for my [personal blog](http://buddyreno.dev).
