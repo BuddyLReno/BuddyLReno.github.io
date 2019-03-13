@@ -1,11 +1,11 @@
 {
-  "name": "buddyreno.me",
+  "name": "buddyreno.dev",
   "version": "1.0.0",
   "description": "Personal site of Buddy Reno",
   "main": "index.html",
   "repository": {
     "type": "git",
-    "url": "git@github.com:BuddyLReno/buddyreno.me"
+    "url": "git@github.com:BuddyLReno/buddyreno.dev"
   },
   "scripts": {
     "serve": "browser-sync start --server --port 4000",
@@ -13,7 +13,7 @@
     "watch": "nodemon -e scss -x \"npm run build:styles\""
   },
   "author": "Buddy Reno",
-  "homepage": "http://buddyreno.me",
+  "homepage": "https://buddyreno.dev",
   "devDependencies": {
     "autoprefixer": "^6.3.4",
     "browser-sync": "^2.11.2",
